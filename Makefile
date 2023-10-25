@@ -52,16 +52,16 @@ OBJ_BONUS = $(SRC_BONUS:%.c=%.o)
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	$(AR) $@ $^
+	@$(AR) $@ $^
 
 bonus: $(NAME) $(OBJ_BONUS)
-	$(AR) $^
+	@$(AR) $^
 
 clean:
-	$(RM) $(OBJ) $(OBJ_BONUS)
+	@$(RM) $(OBJ) $(OBJ_BONUS)
 
 fclean:
-	$(RM) $(OBJ) $(OBJ_BONUS) $(NAME)
+	@$(RM) $(OBJ) $(OBJ_BONUS) $(NAME)
 
 re:	clean all
 

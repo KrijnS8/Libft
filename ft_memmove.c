@@ -6,27 +6,11 @@
 /*   By: kschelvi <kschelvi@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/02 14:04:19 by kschelvi      #+#    #+#                 */
-/*   Updated: 2023/10/12 16:30:45 by kschelvi      ########   odam.nl         */
+/*   Updated: 2023/10/25 16:57:09 by kschelvi      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-/* void	*ft_memmove(void *dest, const void *src, size_t n)
-{
-	char		*dst;
-	const char	*s;
-
-	dst = dest;
-	s = src;
-	if (dst < s)
-		while (n-- > 0)
-			*dst++ = *s++;
-	if (dst > s)
-		while (n-- > 0)
-			dst[n] = s[n];
-	return (dst);
-} */
 
 void	ft_move(char *d, char *s, size_t n)
 {
@@ -59,8 +43,6 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 
 	d = (char *)dest;
 	s = (char *)src;
-	if (!d || !s)
-		return (NULL);
 	if (d == s)
 		return (d);
 	ft_move(d, s, n);

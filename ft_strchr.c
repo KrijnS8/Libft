@@ -6,7 +6,7 @@
 /*   By: kschelvi <kschelvi@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/02 15:30:14 by kschelvi      #+#    #+#                 */
-/*   Updated: 2023/10/12 17:04:21 by kschelvi      ########   odam.nl         */
+/*   Updated: 2023/10/25 16:56:20 by kschelvi      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,12 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	int	i;
+	int		i;
+	size_t	s_len;
 
 	i = 0;
-	while (i <= (int)ft_strlen(s))
+	s_len = ft_strlen(s);
+	while (i <= (int)s_len)
 	{
 		if (s[i] == (unsigned char)c)
 			return (&((char *)s)[i]);

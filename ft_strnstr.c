@@ -6,7 +6,7 @@
 /*   By: kschelvi <kschelvi@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/02 16:48:45 by kschelvi      #+#    #+#                 */
-/*   Updated: 2023/10/16 12:30:29 by kschelvi      ########   odam.nl         */
+/*   Updated: 2023/10/25 16:57:47 by kschelvi      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,13 +19,14 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 
 	i = 0;
 	j = 0;
-	if (little == NULL || *little == '\0' || big == little)
+	if (*little == '\0' || big == little)
 		return ((char *)big);
 	while (i < len && big[i] != '\0')
 	{
 		if (big[i] == little[0])
 		{
-			while (big[i + j] == little[j] && i + j < len)
+			while (big[i + j] == little[j] && \
+					i + j < len && big[i + j] != '\0')
 				j++;
 			if (little[j] == '\0')
 				return (&((char *)big)[i]);
