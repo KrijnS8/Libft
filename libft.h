@@ -6,7 +6,7 @@
 /*   By: kschelvi <kschelvi@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/03 12:29:50 by kschelvi      #+#    #+#                 */
-/*   Updated: 2023/10/18 15:27:39 by kschelvi      ########   odam.nl         */
+/*   Updated: 2023/11/01 15:47:28 by kschelvi      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,5 +70,7 @@ extern void		ft_lstclear(t_list **lst, void (*del)(void*));
 extern void		ft_lstiter(t_list *lst, void (*f)(void *));
 extern t_list	*ft_lstmap(t_list *lst, void *(*f)(void *),
 					void (*del)(void *));
+
+extern char		*ft_get_next_line(int fd);
 
 #endif
