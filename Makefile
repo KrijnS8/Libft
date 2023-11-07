@@ -45,7 +45,10 @@ SRC = ft_atoi.c \
 		ft_lstiter.c \
 		ft_lstmap.c \
 		ft_get_next_line.c \
-		ft_get_next_line_utils.c
+		ft_get_next_line_utils.c \
+		ft_printf.c \
+		ft_printf_utils.c \
+		ft_printf_print.c
 
 OBJ = $(SRC:%.c=%.o)
 
