@@ -6,7 +6,7 @@
 /*   By: kschelvi <kschelvi@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/17 17:11:25 by kschelvi      #+#    #+#                 */
-/*   Updated: 2023/11/07 12:15:24 by kschelvi      ########   odam.nl         */
+/*   Updated: 2023/11/11 12:28:16 by krijn         ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,7 +60,7 @@ int	ft_printf(const char *str, ...)
 	va_end(args);
 	return (p_len);
 }
-
+/* 
 #include <stdio.h>
 
 int main(void)
@@ -71,3 +71,4 @@ int main(void)
 	ft_printf("%s", "NULL");
 	//printf("\nasdfsdf%");
 }
+ */
