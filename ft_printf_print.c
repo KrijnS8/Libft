@@ -6,7 +6,7 @@
 /*   By: kschelvi <kschelvi@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/20 13:27:48 by kschelvi      #+#    #+#                 */
-/*   Updated: 2023/11/07 12:14:19 by kschelvi      ########   odam.nl         */
+/*   Updated: 2023/11/11 12:55:03 by krijn         ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,11 +59,6 @@ int	ft_putuint_base(unsigned int n, char *base)
 
 	base_system = ft_strlen(base);
 	n_len = 0;
-	if (n < 0)
-	{
-		write(1, "-", 1);
-		n_len++;
-	}
 	if (n >= base_system)
 		n_len += ft_putuint_base(n / base_system, base);
 	c = base[n % base_system];

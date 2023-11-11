@@ -6,7 +6,7 @@
 /*   By: kschelvi <kschelvi@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/03 12:29:50 by kschelvi      #+#    #+#                 */
-/*   Updated: 2023/11/07 12:13:41 by kschelvi      ########   odam.nl         */
+/*   Updated: 2023/11/11 12:54:12 by krijn         ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,6 +57,7 @@ extern void		*ft_memchr(const void *s, int c, size_t n);
 extern int		ft_memcmp(const void *s1, const void *s2, size_t n);
 extern void		*ft_calloc(size_t nmemb, size_t size);
 extern void		ft_bzero(void *s, size_t n);
+extern void		*ft_realloc(void *ptr, size_t size);
 
 extern char		**ft_split(const char *s, char c);
 
