@@ -49,7 +49,8 @@ SRC = ft_atoi.c \
 		ft_get_next_line_utils.c \
 		ft_printf.c \
 		ft_printf_utils.c \
-		ft_printf_print.c
+		ft_printf_print.c \
+		ft_is_integer.c
 
 OBJ = $(SRC:%.c=%.o)
 

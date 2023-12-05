@@ -6,7 +6,7 @@
 /*   By: kschelvi <kschelvi@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/03 12:29:50 by kschelvi      #+#    #+#                 */
-/*   Updated: 2023/11/11 12:54:12 by krijn         ########   odam.nl         */
+/*   Updated: 2023/12/05 14:04:10 by kschelvi      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ extern int		ft_isdigit(int c);
 extern int		ft_isalnum(int c);
 extern int		ft_isascii(int c);
 extern int		ft_isprint(int c);
+extern int		ft_is_integer(char *str);
 
 extern int		ft_toupper(int c);
 extern int		ft_tolower(int c);
