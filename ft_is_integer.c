@@ -6,7 +6,7 @@
 /*   By: kschelvi <kschelvi@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/12/05 13:19:46 by kschelvi      #+#    #+#                 */
-/*   Updated: 2023/12/05 14:10:12 by kschelvi      ########   odam.nl         */
+/*   Updated: 2023/12/07 13:25:26 by kschelvi      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ static int	ft_check_limits(char *str, int sign)
 	if (len > 10)
 		return (0);
 	if (len == 10 && sign > 0)
-			return (ft_strncmp(str, "2147483647", 10) <= 0);
+		return (ft_strncmp(str, "2147483647", 10) <= 0);
 	return (1);
 }
 
@@ -30,7 +30,7 @@ int	ft_is_integer(char *str)
 {
 	int		i;
 	int		sign;
-	
+
 	i = 0;
 	sign = 1;
 	if (str[i] == '-' || str[i] == '+')

@@ -6,7 +6,7 @@
 /*   By: kschelvi <kschelvi@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/03 12:29:50 by kschelvi      #+#    #+#                 */
-/*   Updated: 2023/12/05 14:04:10 by kschelvi      ########   odam.nl         */
+/*   Updated: 2023/12/07 13:26:00 by kschelvi      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,7 @@ extern size_t	ft_strlcpy(char *dst, const char *src, size_t size);
 extern size_t	ft_strlcat(char *dst, const char *src, size_t size);
 extern char		*ft_strchr(const char *s, int c);
 extern char		*ft_strrchr(const char *s, int c);
+extern int		ft_strcmp(const char *s1, const char *s2);
 extern int		ft_strncmp(const char *s1, const char *s2, size_t n);
 extern char		*ft_strnstr(const char *big, const char *little, size_t len);
 extern char		*ft_strdup(const char *s);
