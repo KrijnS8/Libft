@@ -6,7 +6,7 @@
 /*   By: kschelvi <kschelvi@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/03 12:29:50 by kschelvi      #+#    #+#                 */
-/*   Updated: 2023/12/15 14:26:03 by kschelvi      ########   odam.nl         */
+/*   Updated: 2023/12/15 15:31:00 by kschelvi      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,7 @@ extern int		ft_strcmp(const char *s1, const char *s2);
 extern int		ft_strncmp(const char *s1, const char *s2, size_t n);
 extern char		*ft_strnstr(const char *big, const char *little, size_t len);
 extern char		*ft_strdup(const char *s);
+extern char		**ft_strarr_dup(char **arr);
 extern char		*ft_strjoin(const char *s1, const char *s2);
 extern char		*ft_strtrim(char const *s1, char const *set);
 extern char		*ft_substr(const char *s, unsigned int start, size_t len);
