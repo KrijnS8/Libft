@@ -6,38 +6,11 @@
 /*   By: kschelvi <kschelvi@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/11 12:43:16 by kschelvi      #+#    #+#                 */
-/*   Updated: 2023/10/18 15:21:54 by kschelvi      ########   odam.nl         */
+/*   Updated: 2023/12/15 14:27:54 by kschelvi      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-static size_t	ft_count_words(const char *s, char sep)
-{
-	int	c;
-	int	i;
-	int	j;
-
-	c = 0;
-	i = 0;
-	j = 0;
-	while (s[i] != '\0')
-	{
-		if (s[i] != sep)
-		{
-			while (s[i] != sep && s[i] != '\0')
-			{
-				j++;
-				i++;
-			}
-			if (j > 0)
-				c++;
-			continue ;
-		}
-		i++;
-	}
-	return (c);
-}
 
 static size_t	ft_word_length(const char *s, char sep, int index)
 {

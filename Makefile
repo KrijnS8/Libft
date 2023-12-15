@@ -51,7 +51,8 @@ SRC = ft_atoi.c \
 		ft_printf.c \
 		ft_printf_utils.c \
 		ft_printf_print.c \
-		ft_is_integer.c
+		ft_is_integer.c \
+		ft_count_words.c
 
 OBJ = $(SRC:%.c=%.o)
 
