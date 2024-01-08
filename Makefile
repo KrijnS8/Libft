@@ -53,7 +53,8 @@ SRC = ft_atoi.c \
 		ft_printf_print.c \
 		ft_is_integer.c \
 		ft_count_words.c \
-		ft_strarr_dup.c
+		ft_strarr_dup.c \
+		ft_build_path.c
 
 OBJ = $(SRC:%.c=%.o)
 
