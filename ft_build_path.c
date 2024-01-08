@@ -6,13 +6,13 @@
 /*   By: kschelvi <kschelvi@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/01/08 17:28:27 by kschelvi      #+#    #+#                 */
-/*   Updated: 2024/01/08 17:29:51 by kschelvi      ########   odam.nl         */
+/*   Updated: 2024/01/08 17:33:25 by kschelvi      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*build_path(char *folder, char *file, char *extention)
+char	*ft_build_path(char *folder, char *file, char *extention)
 {
 	char	*path;
 	char	*temp;
