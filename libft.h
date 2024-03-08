@@ -6,7 +6,7 @@
 /*   By: kschelvi <kschelvi@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/03 12:29:50 by kschelvi      #+#    #+#                 */
-/*   Updated: 2024/03/04 14:40:13 by kschelvi      ########   odam.nl         */
+/*   Updated: 2024/03/08 11:46:59 by kschelvi      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ extern int		ft_isalnum(int c);
 extern int		ft_isascii(int c);
 extern int		ft_isprint(int c);
 extern int		ft_is_integer(char *str);
+extern int		ft_isspace(int c);
 
 extern int		ft_toupper(int c);
 extern int		ft_tolower(int c);

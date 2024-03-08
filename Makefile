@@ -10,6 +10,7 @@ SRC = ft_atoi.c \
 		ft_isascii.c \
 		ft_isdigit.c \
 		ft_isprint.c \
+		ft_isspace.c \
 		ft_itoa.c \
 		ft_memchr.c \
 		ft_memcmp.c \
@@ -55,7 +56,7 @@ SRC = ft_atoi.c \
 		ft_is_integer.c \
 		ft_count_words.c \
 		ft_strarr_dup.c \
-		ft_build_path.c
+		ft_build_path.c 
 
 OBJ = $(SRC:%.c=%.o)
 
