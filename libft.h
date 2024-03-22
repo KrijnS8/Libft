@@ -6,7 +6,7 @@
 /*   By: kschelvi <kschelvi@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/03 12:29:50 by kschelvi      #+#    #+#                 */
-/*   Updated: 2024/03/08 11:46:59 by kschelvi      ########   odam.nl         */
+/*   Updated: 2024/03/22 14:10:43 by kschelvi      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,7 @@ extern void		ft_putendl_fd(char *s, int fd);
 extern void		ft_putnbr_fd(int n, int fd);
 
 extern size_t	ft_strlen(const char *str);
+extern void		ft_strcpy(char *dst, const char *src);
 extern size_t	ft_strlcpy(char *dst, const char *src, size_t size);
 extern size_t	ft_strlcat(char *dst, const char *src, size_t size);
 extern char		*ft_strchr(const char *s, int c);

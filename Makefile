@@ -28,6 +28,7 @@ SRC = ft_atoi.c \
 		ft_striteri.c \
 		ft_strjoin.c \
 		ft_strlcat.c \
+		ft_strcpy.c \
 		ft_strlcpy.c \
 		ft_strlen.c \
 		ft_strmapi.c \
