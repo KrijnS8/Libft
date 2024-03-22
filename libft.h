@@ -6,7 +6,7 @@
 /*   By: kschelvi <kschelvi@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/03 12:29:50 by kschelvi      #+#    #+#                 */
-/*   Updated: 2024/03/22 14:10:43 by kschelvi      ########   odam.nl         */
+/*   Updated: 2024/03/22 15:26:39 by kschelvi      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,6 +75,7 @@ extern int		ft_lstsize(t_list *lst);
 extern t_list	*ft_lstlast(t_list *lst);
 extern void		ft_lstadd_back(t_list **lst, t_list *new);
 extern void		ft_lstdelone(t_list *lst, void (*del)(void*));
+extern void		ft_lstdel(t_list **list, t_list *to_del, void (*del)(void*));
 extern void		ft_lstclear(t_list **lst, void (*del)(void*));
 extern void		ft_lstiter(t_list *lst, void (*f)(void *));
 extern t_list	*ft_lstmap(t_list *lst, void *(*f)(void *),
