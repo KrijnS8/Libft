@@ -6,7 +6,7 @@
 /*   By: kschelvi <kschelvi@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/03 12:29:50 by kschelvi      #+#    #+#                 */
-/*   Updated: 2024/04/09 14:15:19 by kschelvi      ########   odam.nl         */
+/*   Updated: 2024/04/09 14:24:09 by kschelvi      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ extern char		*ft_itoa(int n);
 
 extern void		ft_putchar_fd(char c, int fd);
 extern void		ft_putstr_fd(char *s, int fd);
-extern void		ft_putstr_arr_fd(char **arr, int size, char sep, int fd);
+extern void		ft_putstr_arr_fd(char **arr, char sep, int fd);
 extern void		ft_putendl_fd(char *s, int fd);
 extern void		ft_putnbr_fd(int n, int fd);
 
