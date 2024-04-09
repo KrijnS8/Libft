@@ -6,7 +6,7 @@
 /*   By: kschelvi <kschelvi@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/03 12:29:50 by kschelvi      #+#    #+#                 */
-/*   Updated: 2024/03/22 15:26:39 by kschelvi      ########   odam.nl         */
+/*   Updated: 2024/04/09 14:15:19 by kschelvi      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,6 +68,7 @@ extern void		*ft_realloc(void *ptr, size_t size);
 extern char		**ft_split(const char *s, char c);
 extern size_t	ft_count_words(const char *s, char sep);
 extern char		*ft_build_path(char *folder, char *file, char *extention);
+extern void		ft_free_strarr(char **arr);
 
 extern t_list	*ft_lstnew(void *content);
 extern void		ft_lstadd_front(t_list **lst, t_list *new);

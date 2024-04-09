@@ -6,7 +6,7 @@
 /*   By: kschelvi <kschelvi@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/12/15 15:17:23 by kschelvi      #+#    #+#                 */
-/*   Updated: 2023/12/15 15:30:32 by kschelvi      ########   odam.nl         */
+/*   Updated: 2024/04/09 14:15:52 by kschelvi      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,21 +20,6 @@ static int	ft_arr_size(char **arr)
 	while (arr[i] != NULL)
 		i++;
 	return (i);
-}
-
-static void	ft_free_strarr(char **arr)
-{
-	int	i;
-
-	if (!arr)
-		return ;
-	i = 0;
-	while (arr[i] != NULL)
-	{
-		free(arr[i]);
-		i++;
-	}
-	free(arr);
 }
 
 char	**ft_strarr_dup(char **arr)
