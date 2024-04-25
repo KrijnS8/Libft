@@ -6,7 +6,7 @@
 /*   By: kschelvi <kschelvi@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/20 13:27:48 by kschelvi      #+#    #+#                 */
-/*   Updated: 2023/11/11 12:55:03 by krijn         ########   odam.nl         */
+/*   Updated: 2024/04/25 13:00:11 by kschelvi      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,24 +15,24 @@
 #include "ft_printf.h"
 #include "libft.h"
 
-int	ft_putchar(char c)
+int	ft_putchar(char c, int fd)
 {
-	write(1, &c, 1);
+	write(fd, &c, 1);
 	return (1);
 }
 
-int	ft_putstr(char *s)
+int	ft_putstr(char *s, int fd)
 {
 	int	s_len;
 
 	if (s == NULL)
-		return (write(1, "(null)", 6));
+		return (write(fd, "(null)", 6));
 	s_len = ft_strlen(s);
-	write(1, s, s_len);
+	write(fd, s, s_len);
 	return (s_len);
 }
 
-int	ft_putnbr(int n)
+int	ft_putnbr(int n, int fd)
 {
 	char	c;
 	int		n_len;
@@ -40,18 +40,18 @@ int	ft_putnbr(int n)
 	n_len = 0;
 	if (n < 0)
 	{
-		write(1, "-", 1);
+		write(fd, "-", 1);
 		n_len++;
 	}
 	if (n > 9 || n < -9)
-		n_len += ft_putnbr(ft_abs((n / 10)));
+		n_len += ft_putnbr(ft_abs((n / 10)), fd);
 	c = ft_abs(n % 10) + '0';
-	write(1, &c, 1);
+	write(fd, &c, 1);
 	n_len++;
 	return (n_len);
 }
 
-int	ft_putuint_base(unsigned int n, char *base)
+int	ft_putuint_base(unsigned int n, char *base, int fd)
 {
 	unsigned int	base_system;
 	int				n_len;
@@ -60,23 +60,23 @@ int	ft_putuint_base(unsigned int n, char *base)
 	base_system = ft_strlen(base);
 	n_len = 0;
 	if (n >= base_system)
-		n_len += ft_putuint_base(n / base_system, base);
+		n_len += ft_putuint_base(n / base_system, base, fd);
 	c = base[n % base_system];
-	write(1, &c, 1);
+	write(fd, &c, 1);
 	n_len++;
 	return (n_len);
 }
 
-int	ft_putptr(void *ptr)
+int	ft_putptr(void *ptr, int fd)
 {
 	unsigned long int	p;
 	int					p_len;
 
 	if (ptr == NULL)
-		return (ft_putstr("(nil)"));
+		return (ft_putstr("(nil)", fd));
 	p = (unsigned long int)ptr;
 	p_len = 0;
-	p_len += ft_putstr("0x");
-	p_len += ft_putulint_base(p, BASE_16_LOWERCASE);
+	p_len += ft_putstr("0x", fd);
+	p_len += ft_putulint_base(p, BASE_16_LOWERCASE, fd);
 	return (p_len);
 }

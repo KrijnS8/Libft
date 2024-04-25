@@ -6,7 +6,7 @@
 /*   By: kschelvi <kschelvi@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/03 12:29:50 by kschelvi      #+#    #+#                 */
-/*   Updated: 2024/04/09 14:24:09 by kschelvi      ########   odam.nl         */
+/*   Updated: 2024/04/25 13:01:12 by kschelvi      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,5 +84,6 @@ extern t_list	*ft_lstmap(t_list *lst, void *(*f)(void *),
 
 extern char		*ft_get_next_line(int fd);
 extern int		ft_printf(const char *str, ...);
+extern int		ft_dprintf(int fd, const char *str, ...);
 
 #endif
